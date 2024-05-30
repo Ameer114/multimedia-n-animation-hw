@@ -1,0 +1,14 @@
+body{
+    text-align: center;
+   
+}
+#username{
+    margin-bottom: 20px
+}
+#password{
+    
+    margin-bottom: 20px
+}
+p{
+    color: blue;
+}
