@@ -1,0 +1,66 @@
+ body{
+   background-color: skyblue;
+   margin-top: 200px;
+}
+#big{
+    margin-left: 500px;
+animation: move 2s infinite;
+}
+#sun{
+    position: absolute;
+    z-index: -4;
+    right: 540px;
+    top: 100px;
+    animation: rot 5s infinite linear;
+}
+#small{
+animation: move2 2s 0.2s infinite;
+position: absolute;
+z-index: -3;
+}
+#plane{
+    position:absolute;
+    z-index: -1;
+    top: 250px;
+    left: 200px;
+    animation: move3 6s infinite linear;
+}
+#vi{
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    
+
+}
+#garden{
+    width: 950px;
+    position: absolute;
+    z-index: -1;
+    bottom: 150px;
+    left: 400px;
+}
+@keyframes move {
+    0%{transform: translate3d(50px,80px,0px);}
+    50%{transform: translate3d(40px,0px,0px);}
+    100%{transform: translate3d(50px,80px,0px);}    
+}
+@keyframes move2 {
+    0%{transform: translate3d(50px,80px,0px);}
+    50%{transform: translate3d(40px,0px,0px);}
+    100%{transform: translate3d(50px,80px,0px);}    
+}
+@keyframes move3 {
+    0%{transform: translate3d(-40px,0px,0px);}
+    100%{transform: translate3d(1200px,20px,0px);}
+}
+@keyframes rot {
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+    
+}
